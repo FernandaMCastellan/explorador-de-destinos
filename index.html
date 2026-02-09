@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Destinos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+</head>
+<body>
+
+    <header>
+        <h1>Places to Visit!</h1>
+        <div class="mostrarLocalização">
+            <button id="btnLocalizacao">Mostrar Localização Atual</button>
+        <p id="localizacao">Ponto de partida: não obtida</p>
+        </div>
+        
+    </header>
+
+    <main>  
+        <h2>Explorador de destinos</h2>
+         <div class="layout">
+
+    <section id="sugestoes" class="container-destinos">
+        
+        
+        <div id="destinos">
+            <!-- Espaço para cards criados via js -->
+        </div>
+        
+    </section>
+
+    <aside class="sidebar-favoritos">
+            <h2>Favoritos</h2>
+            <ul id="lista-favoritos"></ul>
+        </aside>
+</div>  
+       </main>
+    
+   
+    <script type="module"  src="script.js"></script>
+</body>
+</html>

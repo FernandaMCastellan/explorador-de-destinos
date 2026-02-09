@@ -1,0 +1,148 @@
+ /* background-color: rgb(226, 237, 208);
+    background-color: rgb(184, 203, 214);
+    background-color: rgb(142, 166, 166); */
+
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(184, 203, 214);
+}
+
+header{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(142, 166, 166);
+    
+}
+
+h1{
+    margin: 20px;
+    color: #2a412e;
+    
+}
+
+.mostrarLocalização{
+    margin: 20px;
+}
+
+#btnLocalizacao{
+    box-shadow: 2px 2px 5px 0  rgba(0, 0, 0, 0.2);
+
+
+}
+h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    color: #3A5A40;
+    
+    
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin: 20px;
+    
+}
+
+.container-destinos {
+   
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+
+     
+}
+
+.card-destino{
+    position: relative;
+    background-color: #fff;
+    border-radius: 18px;    
+    margin-bottom: 20px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    
+    justify-items: center;
+
+    box-shadow: 2px 2px 5px 2px  rgba(0, 0, 0, 0.2);
+    
+    
+   
+    
+} 
+
+
+.card-destino img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    order: 1;
+    
+}
+
+.card-destino .btn-favorito{
+    order: 2;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    font-size: 40px;  
+       
+    align-self: flex-end;
+    top: 34px;
+    right: 40px;
+
+}
+
+.card-destino .title{
+    order: 3;
+    margin-top: 20px;
+    
+
+}
+
+.btn-favorito.ativo{
+    color: crimson;
+}
+
+
+
+.sidebar-favoritos {
+    position: sticky;    
+    background-color: rgb(239, 245, 230);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px 2px  rgba(0, 0, 0, 0.2);
+
+    height: fit-content;
+}
+
+#lista-favoritos {
+    padding: 0;
+    
+}
+
+#lista-favoritos li{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#lista-favoritos img{
+    border-radius: 8px;
+    margin: 10px;
+}
+
+
+
